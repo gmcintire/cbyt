@@ -1,6 +1,6 @@
 require 'sinatra'
 
-get '/' do
-  "Hello World!"
+get '/:id' do
+  redirect 'http://callbytxt.org/call/'+params[:id]
 end
 
